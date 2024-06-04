@@ -71,25 +71,112 @@
             Найт-Сити изменит тебя навсегда!
           </h2>
           <p class="about__descr">
-           <a href="" class="text-link about__text-link">Cyberpunk 2077</a> &mdash; приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.
+            <a href="" class="text-link about__text-link">Cyberpunk 2077</a> &mdash; приключенческая ролевая игра,
+            действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше
+            всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять
+            киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход
+            сюжета и всё, что тебя окружает.
           </p>
         </div><!--/about__top-->
         <div class="about__bottom">
           <div class="about__Left">
-            <div class="about__image cut-corners">
+            <div class="about__image about__image_min cut-corners">
               <img src="img/about__1.jpg" alt="Найт-Сити">
             </div>
-            <div class="about__image cut-corners">
+            <div class="about__image about__image_min cut-corners">
               <img src="img/about__2.jpg" alt="Найт-Сити">
             </div>
           </div><!--/about__left-->
           <div class="about__right">
-              <div class="about__image cut-corners">
-                <img src="img/about__3.jpg" alt="Найт-Сити">
-              </div>
+            <div class="about__image cut-corners">
+              <img src="img/about__3.jpg" alt="Найт-Сити">
+            </div>
           </div><!--/about__right-->
         </div><!--/about__bottom-->
-           </div><!--/container-->
+      </div><!--/container-->
+    </section>
+    <section class="play">
+      <div class="container">
+        <h2 class="title play__title">
+          Играй и выигрывай!
+        </h2>
+        <p class="descr play__descr">
+          Играй в <a href="#" class="text-link">Cyberpunk 2077</a> и получи возможность выиграть консоль <a href="#"
+            class="text-link">Xbox Series X</a> или <a href="#" class="text-link">Sony PlayStation 5</a> ! Заполни форму
+          ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ; &#41;
+        </p>
+        <form method="post" action="https://jsonplaceholder.typicode.com/posts" class="play__form form">
+          <input type="text" name="username" id="name" class="form__input" placeholder="Как тебя зовут?">
+          <input type="email" name="userEmail" id="email" class="form__input" placeholder="Твой e-mail">
+          <label for="screen" class="form-label">
+            <input type="file" name="userScreen" id="screen" class="form-label__file">
+            <span class="form-label__text">
+              Прикрепить скриншот
+            </span>
+            <span class="form-label__format">
+              .png / .jpg / .pdf
+            </span>
+
+          </label>
+          <button type="submit" class="btn-reset form__btn">
+            Отправить
+          </button>
+          <label for="check" class="form__checkbox checkbox">
+            <input type="checkbox" name="check" id="gameCheck">
+            <span class="checkbox__text">
+              Согласен на обработку персональных данных
+            </span>
+          </label>
+        </form>
+        <img src="img/game__img.png" alt="" aria-hidden="true">
+      </div><!--/container-->
+    </section>
+    <section class="hp">
+      <div class="container">
+        <div class="hp__left">
+          <img src="img/hp__image.png" alt="монитор Hewlet Paccard">
+          <div class="hp__brands">
+            <div class="hp__brand">
+              <img src="img/hp__logo.svg" alt="Лого Hewllett Paccard">
+            </div>
+            <div class="hp__brand">
+            <span class="brands__separator">
+
+            </span>
+            </div>
+            <div class="hp__brand">
+              <img src="img/Logo.svg" alt="Лого Cyberpunk 2077">
+            </div>
+          </div><!--/hp__brands-->
+        </div>
+        <div class="hp__right">
+          <h2 class="title hp__title">
+            Полное погружение вместе с HP
+          </h2>
+          <p class="descr hp__descr">
+            Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!
+          </p>
+          <ul class="hp__list list-reset">
+            <li class="hp__item" style="background-image: url('img/palette.svg'); background-position: left; background-size: contain; background-repeat: no-repeat;">
+              Яркие насыщенные цвета
+            </li>
+            <li class="hp__item" style="background-image: url('img/sparkles.svg'); background-position: left; background-size: contain; background-repeat: no-repeat;">
+              Кристальная четкость изображения
+            </li>
+            <li class="hp__item" style="background-image: url('img/files.svg'); background-position: left; background-size: contain; background-repeat: no-repeat;">
+              Быстрые движения и плавный геймплей
+            </li>
+          </ul>
+          <a href="#" class="btn hp__btn">
+            Подробнее
+          </a>
+        </div>
+      </div><!--/container-->
+    </section>
+    <section class="buy">
+      <div class="container">
+
+      </div><!--/container-->
     </section>
   </main>
   <script src="js/main.js"></script>
