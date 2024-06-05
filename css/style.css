@@ -217,6 +217,8 @@ a{
 :root {
   --accent-color: #f8f200;
   --text: #000;
+  --text-2: #777;
+  --link-color: #52bedc;
 }
 
 .btn-reset  {
@@ -314,11 +316,15 @@ a{
 .cut-corners  {
   clip-path: polygon(12% 0, 100% 0, 100% 80%, 88% 100%, 0 100%, 0 20%);
   overflow: hidden;
+
 }
 
 .title  {
   font-family: 'archangelskregular', sans-serif;
+  font-size: 62px;
   font-weight: 400;
+  line-height: 63px;
+  color: var(--text);
 }
 
 .hero-info__title {
@@ -326,6 +332,7 @@ a{
   font-size: 62px;
   font-weight: 400;
   line-height: 63.3px;
+
 }
 
 .hero-info__btn {
@@ -345,5 +352,52 @@ a{
   border: 1px solid var(--text);
 }
 
+/*-------------about-------------*/
+
+.about  {
+  padding-top: 70px;
+}
+
+.about__title {
+  margin-bottom: 25px;
+}
+
+.about__descr {
+  margin-bottom: 70px;
+  max-width: 951px;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--text-2);
+}
+
+.text-link  {
+  font-weight: 700;
+  color: var(--link-color);
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.text-link:hover  {
+  color: var(--text-2);
+  text-decoration: underline;
+}
+
+.about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__image_min:not(:last-child)  {
+  margin-bottom: 32px;
+}
+
+.about__Left  {
+  width: 460px;
+  margin-right: 32px;
+}
+
+.about__right {
+  width: calc(100% - 460px - 32px);
+}
 
 
