@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+}
 @font-face {
   font-family: 'Muller';
   src: url('../fonts/MullerUltraLight.woff2') format('woff2'),
@@ -160,6 +167,15 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'archangelskregular';
+  src: url('../fonts/archangelsk.woff2') format('woff2'),
+       url('../fonts/archangelsk.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 h1,
 h2,
@@ -172,6 +188,12 @@ h6 {
 
 body  {
   font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
 }
 
 .d-flex {
@@ -187,6 +209,19 @@ body  {
 a{
   color: inherit;
   text-decoration: none;
+}
+
+
+:root {
+  --accent-color: #f8f200;
+  --text: #000;
+}
+
+.btn-reset  {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -237,9 +272,57 @@ a{
 
 
 .hero {
-  min-height: 1000px;
+  height: 1000px;
   background-image: url('../img/hero-1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.hero__container  {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.hero-info  {
+  max-width: 624px;
+  padding: 70px;
+  background-color: var(--accent-color);
+}
+
+.cut-corners  {
+  clip-path: polygon(12% 0, 100% 0, 100% 80%, 88% 100%, 0 100%, 0 20%);
+
+}
+
+.title  {
+  font-family: 'archangelskregular', sans-serif;
+}
+
+.hero-info__title {
+  margin-bottom: 25px;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 63.3px;
+}
+
+.hero-info__btn {
+  padding: 19px 50px;
+  background-color: var(--text);
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease-in-out, color .3s ease-in-out, border 0.3 ease-in-out;
+}
+
+.hero-info__btn:hover {
+  color: var(--text);
+  background-color: var(--accent-color);
+  border: 1px solid var(--text);
+}
+
+
