@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyberpunk 2077</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -58,9 +59,27 @@
     <section class="hero">
       <div class="container hero__container">
         <h1 class="visually-hidden">
-          Cyberpunk 2077
+          Промо-сайт Cyberpunk 2077
         </h1>
         <!--SLIDER-->
+<!-- Slider main container -->
+<div class="swiper hero__slider">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" style="background-image: url(img/hero-1.jpg);">Slide 1</div>
+    <div class="swiper-slide" style="background-image: url(img/hero-2.jpg);">Slide 2</div>
+    <div class="swiper-slide" style="background-image: url(img/hero-3.jpg);">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+
+</div>
+
+
+        <!--/sl-->
         <div class="swipper-container hero__slider">
           <div class="swiper-wrapper">
             <div class="sviper-slide" style="background-image: url(img/hero-1.jpg);">
@@ -88,7 +107,7 @@
     <section class="about">
       <div class="container">
         <div class="about__top">
-          <h2 class="site-title about__title">
+          <h2 class="title about__title">
             Найт-Сити изменит тебя навсегда!
           </h2>
           <p class="about__descr">
@@ -180,16 +199,13 @@
             отклика 1 мс и частотой в 144 Гц!
           </p>
           <ul class="hp__list list-reset">
-            <li class="hp__item"
-              style="background-image: url('img/palette.svg');">
+            <li class="hp__item" style="background-image: url('img/palette.svg');">
               Яркие насыщенные цвета
             </li>
-            <li class="hp__item"
-              style="background-image: url('img/sparkles.svg');">
+            <li class="hp__item" style="background-image: url('img/sparkles.svg');">
               Кристальная четкость изображения
             </li>
-            <li class="hp__item"
-              style="background-image: url('img/files.svg'); ">
+            <li class="hp__item" style="background-image: url('img/files.svg'); ">
               Быстрые движения и плавный геймплей
             </li>
           </ul>
@@ -273,12 +289,14 @@
     <div class="footer__bottom">
       <div class="container">
         <small class="footer__copy">
-          CD&nbsp;PROJEKT<sup class="reg">&reg;</sup>, Cyberpunk<sup class="reg">&reg;</sup>, Cyberpunk 2077<sup class="reg">&reg;</sup>
+          CD&nbsp;PROJEKT<sup class="reg">&reg;</sup>, Cyberpunk<sup class="reg">&reg;</sup>, Cyberpunk 2077<sup
+            class="reg">&reg;</sup>
         </small>
       </div><!--/container-->
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/423e8dec2d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

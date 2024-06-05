@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -187,7 +189,7 @@ h6 {
 }
 
 body  {
-  font-family: 'Muller', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--text);
 }
@@ -238,6 +240,7 @@ a{
 
 .header {
   position: absolute;
+  z-index: 5;
   left: 0;
   top: 0;
   width: 100%;
@@ -272,8 +275,22 @@ a{
 
 
 .hero {
+  position: relative;
   height: 1000px;
-  background-image: url('../img/hero-1.jpg');
+
+}
+
+.hero__slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__slider .swiper-slide {
+  width: 100%;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -287,6 +304,8 @@ a{
 }
 
 .hero-info  {
+  position: relative;
+  z-index: 5;
   max-width: 624px;
   padding: 70px;
   background-color: var(--accent-color);
@@ -294,11 +313,12 @@ a{
 
 .cut-corners  {
   clip-path: polygon(12% 0, 100% 0, 100% 80%, 88% 100%, 0 100%, 0 20%);
-
+  overflow: hidden;
 }
 
 .title  {
   font-family: 'archangelskregular', sans-serif;
+  font-weight: 400;
 }
 
 .hero-info__title {
@@ -309,7 +329,7 @@ a{
 }
 
 .hero-info__btn {
-  padding: 19px 50px;
+  padding: 25px 50px;
   background-color: var(--text);
   color: var(--accent-color);
   font-size: 24px;
@@ -324,5 +344,6 @@ a{
   background-color: var(--accent-color);
   border: 1px solid var(--text);
 }
+
 
 
